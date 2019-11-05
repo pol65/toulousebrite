@@ -22,6 +22,7 @@ The app is hosted at :  [https://toulousebrite.herokuapp.com/]
 - `$ bundle install`
 - `$ rails db:migrate`
 - `$ rails db:seed`
+- `$ rails server`
 - Then go to localhost:3000
 
 =====
