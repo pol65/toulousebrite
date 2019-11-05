@@ -1,42 +1,41 @@
 <div class="jumbotron1">
-  <div class="container" style="text-align:center;">
-    <h3 class="display-3">Créé un nouvel évènement</h3>
-    <div id="new_event" class="card-body" >
-
+ <div class="container" style="text-align:center;">
+   <h3 class="display-3">Créé un nouvel évènement</h3>
+   <div id="new_event" class="card-body" >
 <form action= "<%= events_path %>" method="POST">
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-
-  <div class="form-group">
-    <label for="exampleInputEmail1">Titre de l'évènement</label>
-    <input type="string" class="form-control" id="titre" aria-describedby="title" placeholder="Choisissez un titre">
-    <small id="emailHelp" class="form-text text-muted">Votre titre doit faire entre 5 et 140 caractères</small>
-  </div>
-
-  <div class="form-group">
-    <label for="content">Description de l'évènement</label>
-    <textarea class="form-control" id="description" rows="4"></textarea>
-    <small id="description" class="form-text text-muted">Votre description doit faire entre 20 et 1000 caractères</small>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <label for="col">Date et heure de l'évènement</label>
-      <input type="text" class="form-control" placeholder="Au format YYYY-MM-DD HH:MM:SS">
-    </div>
-    <div class="col">
-      <label for="col">Durée de l'évènement</label>
-      <input type="text" class="form-control" placeholder="En minutes">
-    </div>
-    <div class="col">
-      <label for="col">Lieu de l'évènement</label>
-      <input type="text" class="form-control" >
-    </div>
-  </div>
-  <br/><br/>
-  <button type="submit" class="btn btn-primary">Envoyer</button>
-
+ <div class="form-group">
+   <label for="exampleInputEmail1">Titre de l'évènement</label>
+   <input type="string" class="form-control" id="event_title" name="event_title" aria-describedby="title" placeholder="Choisissez un titre">
+   <small id="emailHelp" class="form-text text-muted">Votre titre doit faire entre 5 et 140 caractères</small>
+ </div>
+ <div class="form-group">
+   <label for="exampleInputEmail1">Prix de l'évènement</label>
+   <input type="string" class="form-control" id="event_price" name="event_price" aria-describedby="prix" placeholder="Choisissez un prix">
+   <small id="emailHelp" class="form-text text-muted">Votre prix doit faire entre 1 et 1000 euros</small>
+ </div>
+ <div class="form-group">
+   <label for="content">Description de l'évènement</label>
+   <textarea class="form-control" id="event_description" name="event_description" rows="4"></textarea>
+   <small id="description" class="form-text text-muted">Votre description doit faire entre 20 et 1000 caractères</small>
+ </div>
+ <div class="row">
+   <div class="col">
+     <label for="col">Date et heure de l'évènement</label>
+     <input type="text" id="event_start_date" name="event_start_date" class="form-control" placeholder="Au format YYYY-MM-DD HH:MM:SS">
+   </div>
+   <div class="col">
+     <label for="col">Durée de l'évènement</label>
+     <input type="text" id="event_duration" name="event_duration" class="form-control" placeholder="En minutes">
+   </div>
+   <div class="col">
+     <label for="col">Lieu de l'évènement</label>
+     <input type="text" id="event_location" name="event_location" class="form-control" >
+   </div>
+ </div>
+ <br/><br/>
+ <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
-
-    </div>
-  </div>
+   </div>
+ </div>
 </div>
