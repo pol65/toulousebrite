@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ body{
+}
+.jumbotron{
+	background: 
+linear-gradient(
+  rgba(204, 0, 0, 0.61), 
+  rgba(125, 250, 250, 0.45)),
+    url("https://www.edreams.com/blog/wp-content/uploads/sites/3/2018/02/Toulouse-Saint-Pierre-Bridge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	color:black !important;
+	height:60vh;
+}

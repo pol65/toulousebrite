@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <br><br><br>
+<div class="card text-center">
+  <div class="card-header">
+    <h3><%= @event.title %></h3>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Organisé par : <%= @attendance.user.first_name %> <%= @attendance.user.last_name %></h5>
+    <p class="card-text"><%= @event.description %></p>
+    <br /><br /><br />
+    <a href="<%= root_path %>" class="btn btn-primary">Revenir aux évènements</a>
+  </div>
+  <div class="card-footer text-muted">
+    Évènement créé le <%= @event.created_at %>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

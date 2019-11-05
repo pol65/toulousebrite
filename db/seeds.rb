@@ -22,7 +22,7 @@ users = []
     n = n+1
     users << User.create(
         email: "polo#{n}@yopmail.fr",
-        encrypted_password: "password",
+        password: "password",
         description: "Test description user numéro #{n}",
         first_name: Faker::Name.first_name,
         last_name: Faker::Name.last_name 

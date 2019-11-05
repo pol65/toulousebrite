@@ -1,2 +1,15 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<div class="jumbotron">
+  <div class="container"style="text-align:center;">
+    <h1 class="display-3">Les événements dans la ville Rôoooose !</h1>
+    <p>Tu organises un nouvel évènement ? <br> Partage le à la communauté ! </p><a href="/events/new" class="btn btn-success btn-lg">Créer un évènement</a><br/>
+  </div>
+</div>
+<% @events.each do |event|%>
+<div class="card m-5 p-5" style="height:300px">
+  <div class="card-body">
+    <h3><%= event.title%></h3>
+		<p><%= event.description%></p>
+		<p><a href="<%= event_path(event.id)%>" class="btn btn-primary">Lire la suite</a></p>    
+  </div>
+</div>
+<% end %>
