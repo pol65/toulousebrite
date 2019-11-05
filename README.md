@@ -18,21 +18,23 @@ The app is hosted at :  [https://toulousebrite.herokuapp.com/]
 =================
 
 **Tap in your terminal:**
-> `$ git clone https://github.com/pitswd/the-gossip-project.git`
-> `$ bundle install`
-> `$ rails db:migrate`
-> `$ rails db:seed`
-> Then go to localhost:3000
+- `$ git clone https://github.com/pitswd/the-gossip-project.git`
+- `$ bundle install`
+- `$ rails db:migrate`
+- `$ rails db:seed`
+- Then go to localhost:3000
+
+=====
  if you encounter any problem with the seed, you have to drop the database : 
-> `$ rails db:drop`
-> `$ rails db:create`
-> `$ rails db:migrate`
+- `$ rails db:drop`
+- `$ rails db:create`
+- `$ rails db:migrate`
+
+======
 To verify migration, do:
-> `$ rails db:migrate:status`
-then
-> `$ rails db:seed`
-and
-> `$ rails server`
+- `$ rails db:migrate:status`
+- `$ rails db:seed`
+- `$ rails server`
 
 **Have fun!**
 
